@@ -4,3 +4,4 @@ matplotlib==3.9.2
 pillow==11.0.0
 streamlit==1.44.0
 setuptools==67.8.0
+numpy==1.24.3
