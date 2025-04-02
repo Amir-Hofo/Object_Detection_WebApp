@@ -6,12 +6,15 @@
 import torch, torchvision
 import torch.nn as nn
 from PIL import Image
-import matplotlib.pyplot as plt
-from matplotlib.patches import Rectangle
+import cv2
+import numpy as np
 from torchvision import models
 import streamlit as st
 import io
 import warnings
+
+for lib in [np, cv2]:
+  print(lib.__name__, '-->', lib.__version__)
 
 warnings.filterwarnings("ignore")
 
