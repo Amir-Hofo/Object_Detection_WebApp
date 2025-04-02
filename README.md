@@ -1,6 +1,10 @@
 # Object Detection WebApp
 [WebApp Link](https://object-detection-webapp.streamlit.app)
 
+This is an object detection web app where users can upload an image, select a detection model, and view the processed image with detected objects. 
+The result is downloadable for further use.
+
+---
 Run program with this command:
 
 ```bash
