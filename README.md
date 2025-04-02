@@ -10,7 +10,7 @@ Run program with this command:
 ```bash
 streamlit run main.py
 ```
-گ
+
 ---
 ![Screen Shot 1404-01-13 at 1 43 28 PM](https://github.com/user-attachments/assets/de98cbaf-1a5c-4cc4-819c-dde62301fb5a)
 
