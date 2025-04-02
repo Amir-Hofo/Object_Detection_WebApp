@@ -13,9 +13,6 @@ import streamlit as st
 import io
 import warnings
 
-for lib in [np, cv2]:
-  print(lib.__name__, '-->', lib.__version__)
-
 warnings.filterwarnings("ignore")
 
 # pip install pip-chill
