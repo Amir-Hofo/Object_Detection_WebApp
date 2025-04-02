@@ -10,8 +10,8 @@ from torchvision import models
 import streamlit as st
 import io
 import warnings
-# import numpy as np
-# import cv2
+import numpy as np
+import cv2
 
 warnings.filterwarnings("ignore")
 
