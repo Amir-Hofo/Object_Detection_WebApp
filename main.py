@@ -1,4 +1,6 @@
-from webapp import *
+# from webapp import *
 
-if __name__ == "__main__":
-    webapp_fn()
+# if __name__ == "__main__":
+#     webapp_fn()
+
+from predict import *

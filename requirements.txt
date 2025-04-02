@@ -4,4 +4,5 @@ pillow==11.0.0
 streamlit==1.44.0
 setuptools==67.8.0
 numpy==1.24.3
+opencv-contrib-python==4.11.0
 opencv-python==4.11.0
