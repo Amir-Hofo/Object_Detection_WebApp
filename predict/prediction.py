@@ -24,9 +24,9 @@ def visualization(image, boxes, labels, scores):
     font= ImageFont.load_default()
     for box, label, score in zip(boxes, labels, scores):
         x1, y1, x2, y2= map(int, box)
-        draw.rectangle([x1, y1, x2, y2], outline= (255, 255, 0), width= 2)
+        draw.rectangle([x1, y1, x2, y2], outline= (0, 255, 255), width= 2)
         text= f"{label} ({score:.2f})"
-        draw.text((x1, y1 - 10), text, fill= (255, 255, 0), font= font)
+        draw.text((x1, y1 - 10), text, fill= (0, 255, 255), font= font)
     return image
 
 def prediction_fn(image, model, min_score= 0.65):
