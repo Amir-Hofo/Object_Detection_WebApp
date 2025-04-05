@@ -19,13 +19,14 @@ def object_detection(image, model, min_score):
     return boxes, labels, scores
 
 def visualization(image, boxes, labels, scores):
-    image= np.array(image)
-    image= cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    image= image.convert("RGB")
+    draw= ImageDraw.Draw(image)
+    font= ImageFont.load_default()
     for box, label, score in zip(boxes, labels, scores):
         x1, y1, x2, y2= map(int, box)
-        cv2.rectangle(image, (x1, y1), (x2, y2), (255,255,0), 2)
-        cv2.putText(image, f"{label} ({score:.2f})", (x1, y1 - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,0), 2)
+        draw.rectangle([x1, y1, x2, y2], outline= (255, 255, 0), width= 2)
+        text= f"{label} ({score:.2f})"
+        draw.text((x1, y1 - 10), text, fill= (255, 255, 0), font= font)
     return image
 
 def prediction_fn(image, model, min_score= 0.65):

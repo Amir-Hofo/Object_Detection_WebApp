@@ -13,7 +13,7 @@ def webapp_fn():
         model.eval()
         image= prediction_fn(image, model)
 
-        image= Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+        # image= Image.fromarray(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
         st.image(image, caption= "Done.", use_container_width= True)
 
         buf= io.BytesIO()
